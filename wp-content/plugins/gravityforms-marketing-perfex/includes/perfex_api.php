@@ -5,7 +5,7 @@ class Rednumber_Marketing_CRM_Perfex_API {
 	public $api_key = "";
 	private $attrs_contact = array();
 	private $attrs = array();
-	public static $list_tabs = array("clients","contacts","leads","invoices","tasks","tickets","staffs");
+	public static $list_tabs = array("clients","contacts","leads","invoices","tasks","tickets","staffs","business");
 	function __construct($admin = false){
 		$options = get_option("crm_marketing_".$this->add_on,array("api"=>"","url"));
 		if( $options["api"] != "" ){
